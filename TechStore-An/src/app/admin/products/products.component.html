@@ -1,0 +1,16 @@
+<p>products</p>
+<table>
+  <tr class="AdminProducts" *ngFor="let product of products">
+    <td class="productImageUrl">
+      <img alt="{{ product.name }}" src="{{ parseImg(product.imageUrl) }}" />
+    </td>
+    <td class="productName">{{ product.name }}</td>
+    <td class="productPrice">{{ product.price }}</td>
+    <td class="productDes">{{ product.description }}</td>
+    <td class="productStock">
+      <p *ngIf="product.instock === true; else elseBlock">In Stock</p>
+      <ng-template #elseBlock><p>Out Of Stock</p></ng-template>
+    </td>
+    <td><button (click)="deleteProd(product._id)">Delete</button></td>
+  </tr>
+</table>
