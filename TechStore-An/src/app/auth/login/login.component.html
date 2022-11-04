@@ -1,0 +1,19 @@
+<div class="login">
+    <div class="col-lg-4 col-md-6 col-sm-8 mx-auto">
+        <img class="logo" src="https://techstore-bf.com/img/cetelcom-logo-1640954613.jpg" alt="logo">
+        <h1>login<i class="fa fa-sign-in" aria-hidden="true"></i></h1>
+
+        <form #userlogin="ngForm" class="form-group" (ngSubmit)="login(userlogin)">
+            <input type="email" class="form-control" placeholder="Email" name="email" #email="ngModel" ngModel required>
+            <input type="password" class="form-control" placeholder="Password" name="password" #password="ngModel"
+                ngModel minlength="8" required>
+            <input type="submit" class="btn btn-primary" value="Connexion">
+            <p>IF YOU ARE NOT REGISTRED YET ?<a href="/register" class="btn btn-link"> Sign Up </a></p>
+
+            <!-- <div class="alert alert-danger" role="alert" *ngIf="message">
+                {{ message }}
+              </div> -->
+
+        </form>
+    </div>
+</div>
