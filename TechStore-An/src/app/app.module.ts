@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule  } from '@angular/forms';
@@ -12,12 +11,26 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 
 
+import { DashboardComponent } from './admin/dashboard/dashboard.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { MainSectionComponent } from './admin/main-section/main-section.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { UsersComponent } from './admin/users/users.component';
+import { ProductsComponent } from './admin/products/products.component';
+import { AddComponent } from './admin/add/add.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    DashboardComponent,
+    SidebarComponent,
+    MainSectionComponent,
+    UsersComponent,
+    ProductsComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,
