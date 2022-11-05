@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 
 @Component({
   selector: 'app-add',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private formBuilder:FormBuilder) { }
+  checkoutForm = this.formBuilder.group({
+    name: '',
+    address: '',
+  });
   ngOnInit(): void {
+  }
+  onSubmit():void{
   }
 
 }

@@ -1,1 +1,14 @@
 <p>users</p>
+<table>
+  <tr class="AdminProducts" *ngFor="let user of users">
+    
+    <td class="userName">{{ user.username }}</td>
+    <td class="userPrice">{{ user.email }}</td>
+    <td class="userCreatedAt">{{ user.createdAt
+    }}</td>
+    <td class="userPassword">
+        {{ user.password
+        }}
+    </td>
+    </tr>
+</table>
