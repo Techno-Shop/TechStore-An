@@ -8,6 +8,10 @@ import { ProductsComponent } from './admin/products/products.component';
 // import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { UsersComponent } from './admin/users/users.component';
 import { MainHomeComponent } from './home/main-home/main-home.component';
+import { allProducts} from './products/allproducts/allproducts.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { ProductSideBarComponent } from './products/product-side-bar/product-side-bar.component';
+
 const routes: Routes = [
   {path: "", component: MainHomeComponent},
 
@@ -29,9 +33,12 @@ const routes: Routes = [
       {
          path: 'add',
          component: AddComponent
-      }
+      },
+     
   ]
+  
   },
+  {path: 'products', component:allProducts},
 ];
 
 @NgModule({
