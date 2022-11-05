@@ -1,0 +1,22 @@
+
+  <div class="register">
+    <div class="col-lg-4 col-md-6 col-sm-8 mx-auto">
+        <img class="logo" src="https://techstore-bf.com/img/cetelcom-logo-1640954613.jpg" alt="logo">
+        <h1>Register<i class="fa-solid fa-user"></i></h1>
+        <form #user="ngForm" class="form-group" (ngSubmit)="signUp(user)">
+
+         <input type="text" class="form-control" placeholder="username" name="username"  #username="ngModel" ngModel  required>
+         <input type="email" class="form-control" placeholder="Email"   name="email" #email="ngModel" ngModel required>
+         <input type="password" class="form-control" placeholder="Password" name="password" #password="ngModel" ngModel  minlength="8" required>
+         <input type="text" class="form-control" placeholder="imgUrl" name="imgUrl" #imaageUrl="ngModel" ngModel  required>
+         <input type="submit" class="btn btn-primary" value="register">
+             <p>HAVE AN ACCOUNT ALREADY?<a  href="/login">  SING IN FROM HERE</a></p>
+
+
+    </form>
+    </div>
+   <div></div>
+ </div>
+
+
+ 
