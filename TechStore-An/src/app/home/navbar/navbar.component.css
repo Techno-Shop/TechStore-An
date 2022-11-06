@@ -78,7 +78,8 @@ body {
     float: right;
     display: flex;
     margin-top:3%;
-    margin-right: 140px;
+    margin-right: 250px;
+    left: 0;
     
 }
 .HeaderItem{
