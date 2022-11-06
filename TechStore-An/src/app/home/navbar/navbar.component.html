@@ -1,4 +1,4 @@
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -9,11 +9,11 @@
     crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
 
-<div class="topnav">
+    <div class="topnav">
     
-        <a class="aymen"> <img 
+        <a class="aymen" routerLink="/"> <img 
                 src="https://techstore-bf.com/img/cetelcom-logo-1640954613.jpg" alt="logo">
         </a>
 
@@ -26,14 +26,24 @@
 
 
         
-            <ul class="HeaderComp">
-                <li class="HeaderItem" routerLink="/products">
-                    Product </li>
-                <li class="HeaderItem" routerLink="/cart"> Cart</li>
-                <li class="HeaderItem" routerLink="/login"> Login</li>
-            </ul>
-
-
+            <div class="HeaderComp">
+                <ul class="HeaderItem" routerLink="/products">Product </ul>
+                    
+                <ul class="HeaderItem" routerLink="/cart"> Cart</ul>
+                
+                <!-- <li class="HeaderItem" routerLink="/login"> Login</li>
+                <li class="HeaderItem" routerLink="/" (click)="logout()"> Logout</li> -->
+                <div class="HeaderComp">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" >
+                      Account
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/login">Login</a></li>
+                        <li><a class="dropdown-item" (click)="logout()" href="/">Logout</a></li>
+                    </ul>
+                  </div>
+                </div>
+         
 
 
     
