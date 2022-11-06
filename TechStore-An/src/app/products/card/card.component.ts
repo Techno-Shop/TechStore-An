@@ -1,5 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { CartService } from 'src/app/cart.service';
+import { UserService } from 'src/app/services/user.service';
 
 @Component({
   selector: 'app-card',
@@ -12,7 +13,7 @@ export class CardComponent implements OnInit {
   @Input() description: string;
   @Input() price:string;
 
-  constructor(private cartService:CartService) { }
+  constructor(private cartService:CartService,public userService:UserService) { }
 
   ngOnInit(): void {
   }

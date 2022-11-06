@@ -11,40 +11,45 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script> -->
 
-    <div class="topnav">
-    
-        <a class="aymen" routerLink="/"> <img 
-                src="https://techstore-bf.com/img/cetelcom-logo-1640954613.jpg" alt="logo">
-        </a>
+<div class="topnav">
 
-        <!-- <a routerLink="/home" routerLinkActive="active" style="margin-left:0px">
+    <a class="aymen" routerLink="/"> <img src="https://techstore-bf.com/img/cetelcom-logo-1640954613.jpg" alt="logo">
+    </a>
+
+    <!-- <a routerLink="/home" routerLinkActive="active" style="margin-left:0px">
             Home </a> -->
 
-        <input class="input" placeholder="search" style="margin-left: 300px" />
-        <button class="icon-align-right" class="btn">click me</button>
+    <input class="input" placeholder="search" style="margin-left: 300px" />
+    <button class="icon-align-right" class="btn">click me</button>
 
 
 
-        
+
+    <div class="HeaderComp">
+        <ul class="HeaderItem" routerLink="/products">Product </ul>
+
+
+
+        <li *ngIf="this.userService.connectedUser === ''; else elseBlock" class="HeaderItem" routerLink="/login"> Login
+        </li>
+
+        <ng-template #elseBlock>
+            <ul class="HeaderItem" routerLink="/cart"> Cart</ul>
             <div class="HeaderComp">
-                <ul class="HeaderItem" routerLink="/products">Product </ul>
-                    
-                <ul class="HeaderItem" routerLink="/cart"> Cart</ul>
-                
-                <!-- <li class="HeaderItem" routerLink="/login"> Login</li>
-                <li class="HeaderItem" routerLink="/" (click)="logout()"> Logout</li> -->
-                <div class="HeaderComp">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" >
-                      Account
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/login">Login</a></li>
-                        <li><a class="dropdown-item" (click)="logout()" href="/">Logout</a></li>
-                    </ul>
-                  </div>
-                </div>
-         
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    welcome {{this.userService.connectedUser}}
+                </button>
+                <ul class="dropdown-menu">
+
+                    <li><a class="dropdown-item" (click)="logout()" routerLink="/">Logout</a></li>
+
+                </ul>
+            </div>
+        </ng-template>
+    </div>
 
 
-    
+
+
 </div>

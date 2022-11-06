@@ -35,17 +35,29 @@ tokenObj:any;
     this.userService.login(userLogin.value).subscribe((result)=>{ console.log(result);
 
       this.messageObj=result;
+
       this.message=this.messageObj.status;
+      console.log(this.messageObj.user.username,"test");
+      this.userService.connectedUser=this.messageObj.user.username;
+      console.log(this.tokenServices.connected)
       var email={
         email:userLogin.value.email
       };
-      this.userService.getOne(email).subscribe((result)=>{this.userDatas=result;this.userDataService.addUserData(this.userDatas)})
+      this.userService.getOne(email).subscribe((result)=>{this.userDatas=result;this.userDataService.addUserData(this.userDatas); console.log(result, "result")});
+
       this.tokenObj=result;
       this.token=this.tokenObj.token;
+     
+      
       this.tokenServices.getToken(this.token)
-
-      this.route.navigate(['/'])
-
+      if( this.messageObj.user.role==="admin"){
+        this.route.navigate(['/admin'])
+      }
+      else{
+        this.route.navigate(['/'])
+      }
+      
+      
     },
     (error)=>{this.messageObj=error;
       this.message=this.messageObj.error})
