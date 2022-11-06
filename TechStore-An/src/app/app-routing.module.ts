@@ -9,7 +9,6 @@ import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { UsersComponent } from './admin/users/users.component';
 import { MainHomeComponent } from './home/main-home/main-home.component';
 import { allProducts} from './products/allproducts/allproducts.component';
-import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { ProductSideBarComponent } from './products/product-side-bar/product-side-bar.component';
 
 const routes: Routes = [
