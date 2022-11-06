@@ -1,0 +1,21 @@
+<app-navbar></app-navbar>
+<div class="grid-container">
+     
+
+    <div *ngFor="let product of products">
+        
+         <app-card class="grid-item-Card" title={{product.name}} price={{product.price}} imgUrl={{parseImg(product.imageUrl)}}></app-card>
+        
+    </div> 
+    </div>
+    <div class="sideBar-All">
+     <app-product-side-bar></app-product-side-bar>
+ </div>
+ <div class="foot">
+     <app-footer class="footer"></app-footer>
+ </div>
+   
+    
+    
+   
+

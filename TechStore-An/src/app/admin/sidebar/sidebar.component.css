@@ -1,0 +1,22 @@
+.sideBar {
+  float: left;
+  width: 20%;
+  background-color: #f0ffff;
+  height: 100vh;
+}
+
+.Dash-sideBar {
+  margin: 40px 15%;
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+  cursor: pointer;
+}
+.Dash-Logo {
+  margin-bottom: 50px;
+  padding: 50px;
+}
+.Dash-Logo {
+  width: 150px;
+  margin-top: 30px;
+}
