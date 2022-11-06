@@ -9,6 +9,12 @@
       <div class="price">
         <s></s>{{price}}
       </div>
-      <button class="add-to-cart" (click)="addToCart()">Add to Cart</button>
+      <div *ngIf="this.userService.connectedUser === ''; else elseBlock">
+        <button class="add-to-cart" routerLink="/login">Add to Cart</button>
+      </div>
+      <ng-template #elseBlock>
+        <button class="add-to-cart" (click)="addToCart()">Add to Cart</button>
+      </ng-template>
+      
     </figcaption>
   </figure>

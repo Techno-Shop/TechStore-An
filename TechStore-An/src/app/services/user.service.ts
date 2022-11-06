@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class UserService {
-
+  connectedUser:any;
   constructor(
     private http:HttpClient
     ) { }
@@ -21,12 +21,12 @@ export class UserService {
    } 
    // user sign off
    logout() {
-  //  return this.http.get('http://localhost:3001/auth/logout') 
-  var allCookies = document.cookie.split(';');
-  for (var i = 0; i < allCookies.length; i++)
-      document.cookie = allCookies[i] + "=;expires="
-      + new Date(0).toUTCString();
-      console.log( document.cookie)
+   return this.http.get('http://localhost:3001/auth/logout') 
+  // var allCookies = document.cookie.split(';');
+  // for (var i = 0; i < allCookies.length; i++)
+  //     document.cookie = allCookies[i] + "=;expires="
+  //     + new Date(0).toUTCString();
+  //     console.log( document.cookie)
    }
 
    // get one user
