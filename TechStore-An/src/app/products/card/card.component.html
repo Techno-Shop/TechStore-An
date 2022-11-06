@@ -1,14 +1,14 @@
 <figure class="snip1249" >
 
     <div class="image">
-      <img src={{imgUrl}}/><i class="ion-ios-basketball-outline"></i>
+      <img src={{imgUrl}}/>
     </div>
     <figcaption>
-      <h3>{{title}}</h3>
+      <h5>{{title}}</h5>
       <p>{{description}}</p>
       <div class="price">
         <s></s>{{price}}
       </div>
-      <a href="#" class="add-to-cart">Add to Cart</a>
+      <button class="add-to-cart" (click)="addToCart()">Add to Cart</button>
     </figcaption>
   </figure>

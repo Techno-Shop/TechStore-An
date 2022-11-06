@@ -8,7 +8,9 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class allProducts implements OnInit {
   products:any;
-constructor(private productservice:ProductService) { }
+constructor(private productservice:ProductService,
+   
+  ) { }
 ngOnInit() {
   this.productservice.getAllProduct()
   .subscribe((res:any)=>{

@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+<table>
+    <tr class="AdminProducts" *ngFor="let product of products">
+      <td class="productImageUrl">
+        <img alt="{{ product.title }}" src="{{product.imgUrl}}" />
+      </td>
+      <td class="productName">{{ product.title }}</td>
+      <td class="productPrice">{{ product.price }}</td>
+      
+      <td><button (click)="deleteProd(product._id)">Delete</button></td>
+    </tr>
+  </table>
+  <h2> total = {{totalPrice()}}</h2>
+  <button (click)="BuyProduct()">Buy</button>
+<app-footer class="footer"></app-footer>

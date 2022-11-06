@@ -15,6 +15,5 @@ export class UsersService {
 
   getUsers() {
     return this.http.get<any>('http://localhost:3001/auth/all')
-    .subscribe((data:any) => {console.log(data)});
   }
 }

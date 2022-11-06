@@ -1,29 +1,32 @@
-body {
-    padding: 0;
-    margin: 0;
-    height: 100vh;
-    
-    
+
+  .priceFilter{
+    display: flex;
+     color: white;
+     margin: 10px;
   }
-  .button{
-    outline-color: transparent;
-    outline-style:solid;
-    box-shadow: 0 0 0 4px #01a762;
-    transition: 0.7s;
+  .priceInput{
+   margin-left: 30px;
   }
-  .input{
-     color: #fff;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  padding-top: 5px;
-  border: none;
-  font-size: 1em;
-  font-weight: 200;
-  background: none;
-  opacity: 0;
-  font-family: 'Roboto Mono', monospace;
-  transition: all 0.5s ease;
+  .SideBarTitle{
+    width: 100%;
   }
-  
+  .minMax{
+    width: 50px;
+    margin:5px
+  }
+.h2Title{
+  color: white;
+  margin: 10px;
+}
+.h3Price{
+  color: white;
+  margin: 20px;
+}
+.CatCheckBox{
+  margin :30px;
+  color: white;
+}
+
+.categoryCheck{
+  padding: 5px;
+}

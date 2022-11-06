@@ -5,12 +5,12 @@ import { LoginComponent } from './auth/login/login.component';
 import { AddComponent } from './admin/add/add.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
 import { ProductsComponent } from './admin/products/products.component';
-// import { SidebarComponent } from './admin/sidebar/sidebar.component';
+import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { UsersComponent } from './admin/users/users.component';
 import { MainHomeComponent } from './home/main-home/main-home.component';
 import { allProducts} from './products/allproducts/allproducts.component';
-import { SidebarComponent } from './admin/sidebar/sidebar.component';
 import { ProductSideBarComponent } from './products/product-side-bar/product-side-bar.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   {path: "", component: MainHomeComponent},
@@ -39,6 +39,7 @@ const routes: Routes = [
   
   },
   {path: 'products', component:allProducts},
+  {path:'cart', component:CartComponent}
 ];
 
 @NgModule({
