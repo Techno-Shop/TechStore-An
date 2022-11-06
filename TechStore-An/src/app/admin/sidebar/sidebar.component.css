@@ -11,12 +11,11 @@
   text-align: left;
   font-size: 20px;
   cursor: pointer;
+  list-style: none;
 }
 .Dash-Logo {
   margin-bottom: 50px;
   padding: 50px;
+  width: 300px;
 }
-.Dash-Logo {
-  width: 150px;
-  margin-top: 30px;
-}
+

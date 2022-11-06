@@ -1,0 +1,12 @@
+div{
+    font-family: 'Varela Round', sans-serif;
+}
+
+.picsum-img-wrapper{
+    background-color: blueviolet;
+}
+
+.picsum-img-wrapper img{
+    background-color: blueviolet;
+    width: 100%;
+}

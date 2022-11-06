@@ -1,0 +1,32 @@
+
+  .priceFilter{
+    display: flex;
+     color: white;
+     margin: 10px;
+  }
+  .priceInput{
+   margin-left: 30px;
+  }
+  .SideBarTitle{
+    width: 100%;
+  }
+  .minMax{
+    width: 50px;
+    margin:5px
+  }
+.h2Title{
+  color: white;
+  margin: 10px;
+}
+.h3Price{
+  color: white;
+  margin: 20px;
+}
+.CatCheckBox{
+  margin :30px;
+  color: white;
+}
+
+.categoryCheck{
+  padding: 5px;
+}
