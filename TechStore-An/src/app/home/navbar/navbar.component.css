@@ -77,9 +77,10 @@ body {
     width: 7%;
     float: right;
     display: flex;
-    margin-top:3%;
-    margin-right: 250px;
+    margin-top:2%;
+    margin-right: 400px;
     left: 0;
+ 
     
 }
 .HeaderItem{
@@ -90,6 +91,22 @@ body {
     font-size: 22px;
     cursor: pointer;
    
+
+}
+/* .btn-group-dropend{
+margin-right: 100px;
+list-style: none;
+background-color: #20638f ;
+
+} */
+.dropdown-menu{
+    font-size: 3px;
+    background-color: #20638f ;
+}
+.dropdown-item{
+    color: rgb(194, 18, 18);
+    background-color: #20638f ;
+    max-height: 1%;
 
 }
 
